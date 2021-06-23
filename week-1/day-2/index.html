@@ -20,10 +20,24 @@
 
 <div>
     <audio controls>
-        <source src="./music/song1.mp3" type="audio/mpeg">
+        <source src="./music/song2.mp3" type="audio/mpeg">
         Your browser does not support the audio tag.
     </audio>
 </div>
+
+<div>
+    <audio style="display: none;" id="audio1" controls>
+        <source src="./music/bear.mp3" type="audio/mpeg">
+    </audio>
+</div>
+<br><br><br>
+<button onclick="run1()">play 1</button>
+<script>
+    function run1() {
+        const audio = document.getElementById('audio1');
+        audio.play()
+    }
+</script>
 
 
 <!--<form action="#">-->
@@ -47,4 +61,44 @@
 <div style="margin-bottom: 1000px"></div>
 
 </body>
+
+<!-- Tables -->
+
+<table border="1">
+    <!-- tr stands for table row -->
+    <tr>
+        <!-- td or table data makes a column in our row-->
+        <td>First Column</td>
+        <td>Second Column</td>
+        <td>Third Column</td>
+    </tr>
+    <tr>
+        <!-- td ot table data makes a column in our row -->
+        <td>First Column</td>
+        <td></td>
+        <td>Third Column</td>
+    </tr>
+</table>
+
+    <!-- Input tag text fields -->
+    <br><br>
+    <input type="button" value="Click Me Attribute">
+    <input type="checkbox" value="Check here">
+    <input type="checkbox" value="Check here">
+    <input type="checkbox" value="Check here">
+
+    <!-- Labels / Label tags -->
+    
+    <br>
+
+    <label for="">First Name:</label>
+    <input type="text">
+    <br>
+    <label for="">Last Name:</label>
+    <input type="text">
+    <br>
+    <label for="">Really Long Label:</label>
+    <input type="text">
+
+
 </html>
